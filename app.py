@@ -88,7 +88,7 @@ async def generate_csv():
         # Generate CSV file content
         csv_content = ""
         for image in images:
-            download_url = f"http://localhost:8000/download/{image.filename}"
+            download_url = f"http://34.131.190.233:8000/download/{image.filename}"
             csv_content += f"{image.filename},{download_url}\n"
 
     # Set response headers for downloading the CSV file
